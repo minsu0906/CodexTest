@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>순우리말 랜덤 사전</title>
+  <meta name="theme-color" content="#506d47">
+  <meta name="description" content="버튼을 누르면 순우리말 단어와 뜻을 랜덤으로 보여주는 작은 사전 앱">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon-192.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <p class="eyebrow">Random Pure Korean Word</p>
+    <h1>순우리말 한 조각</h1>
+    <p class="intro">버튼을 누를 때마다 아름다운 순우리말과 뜻을 새롭게 만나보세요.</p>
+
+    <section class="card" aria-live="polite">
+      <p class="label">오늘의 단어</p>
+      <h2 id="word">가람</h2>
+      <p id="meaning">강을 뜻하는 순우리말.</p>
+    </section>
+
+    <button id="random-button" type="button">새 단어 보기</button>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
