@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f6efe3"/>
+      <stop offset="100%" stop-color="#d7e7d2"/>
+    </linearGradient>
+  </defs>
+  <rect width="192" height="192" rx="42" fill="url(#bg)"/>
+  <circle cx="96" cy="96" r="63" fill="#fffaf3" opacity="0.94"/>
+  <text x="96" y="113" text-anchor="middle" font-size="66" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" fill="#395333">말</text>
+</svg>
