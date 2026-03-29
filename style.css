@@ -1,0 +1,140 @@
+:root {
+  --bg-top: #f6efe3;
+  --bg-bottom: #d7e7d2;
+  --card-bg: rgba(255, 252, 247, 0.86);
+  --card-border: rgba(104, 124, 91, 0.2);
+  --text-main: #243126;
+  --text-soft: #5f6f61;
+  --accent: #506d47;
+  --accent-strong: #395333;
+  --shadow: 0 22px 60px rgba(54, 71, 48, 0.18);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  font-family: "Malgun Gothic", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+  color: var(--text-main);
+  background:
+    radial-gradient(circle at top left, rgba(255, 255, 255, 0.85), transparent 35%),
+    linear-gradient(160deg, var(--bg-top), var(--bg-bottom));
+}
+
+.app {
+  width: min(100%, 560px);
+  padding: 32px;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(14px);
+  box-shadow: var(--shadow);
+}
+
+.eyebrow,
+.label,
+.intro {
+  margin: 0;
+}
+
+.eyebrow,
+.label {
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.75rem;
+  color: var(--text-soft);
+}
+
+h1 {
+  margin: 12px 0 12px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2rem, 6vw, 3.2rem);
+  line-height: 1.1;
+}
+
+.intro {
+  margin-bottom: 28px;
+  line-height: 1.7;
+  color: var(--text-soft);
+}
+
+.card {
+  padding: 28px;
+  border: 1px solid var(--card-border);
+  border-radius: 24px;
+  background: var(--card-bg);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+#word {
+  margin: 14px 0 10px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2.2rem, 9vw, 4rem);
+}
+
+#meaning {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--text-soft);
+}
+
+button {
+  margin-top: 22px;
+  width: 100%;
+  border: 0;
+  border-radius: 999px;
+  padding: 16px 20px;
+  font-size: 1rem;
+  font-family: inherit;
+  color: #f8f7f3;
+  background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+  cursor: pointer;
+  transition: transform 160ms ease, box-shadow 160ms ease, filter 160ms ease;
+  box-shadow: 0 14px 28px rgba(57, 83, 51, 0.25);
+}
+
+button:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.03);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+button:focus-visible {
+  outline: 3px solid rgba(80, 109, 71, 0.3);
+  outline-offset: 4px;
+}
+
+.card.flash {
+  animation: fadeSwap 420ms ease;
+}
+
+@keyframes fadeSwap {
+  0% {
+    transform: translateY(6px);
+    opacity: 0.35;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .app {
+    padding: 24px;
+  }
+
+  .card {
+    padding: 22px;
+  }
+}
