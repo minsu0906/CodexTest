@@ -1,0 +1,24 @@
+{
+  "name": "순우리말 한 조각",
+  "short_name": "순우리말",
+  "description": "버튼을 누르면 순우리말 단어와 뜻을 랜덤으로 보여주는 앱",
+  "lang": "ko",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f6efe3",
+  "theme_color": "#506d47",
+  "icons": [
+    {
+      "src": "./icon-192.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "./icon-512.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
